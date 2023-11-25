@@ -1,0 +1,88 @@
+.skills-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 52px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.line {
+    width: 100%;
+    padding-bottom: 48px;
+}
+
+.line2 {
+    width: 100%;
+    padding-top: 48px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.skill h2 {
+    font-size: 28px;
+    line-height: 40px;
+}
+
+.skill p {
+    font-size: 16px;
+    line-height: 28px;
+    opacity: 84%;
+}
+
+
+.skills-rings {
+    width: 530px;
+    height: 129px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    translate: 55%;
+}
+
+
+@media screen and (min-width: 768px) {
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: left;
+    }
+    .container {
+        width: var(--container-width-md);
+    }
+    .skill h2 {
+        font-size: 36px;
+        line-height: 56px;
+    }
+    .skill p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .container {
+        width: var(--container-width-lg);
+    }
+    .skill h2 {
+        font-size: 44px;
+        line-height: 52px;
+    }
+    .skill p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+}
